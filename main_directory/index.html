@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Витребеньки тьоті Тані</title>
+<!--        Caveat - шрифт для выделения чего-то -->
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<!--        Montserrat - основной шрифт-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <header>
+        <nav class="menu">
+            <a href="#products" class="menu-item">Вироби</a>
+        </nav>
+            <div class="cart">
+            </div>
+    </header>
+
+        <div class="filters">
+            <div class="filter">
+                <p class="filter-title">Категорія</p>
+                <div id="category-filter"></div>
+            </div>
+            <div class="filter" id="price-from-filter">
+                <p class="filter-title">
+                    Ціна від:
+                </p>
+                    <input type="number" id="price-from"/>
+            </div>
+            <div class="filter" id="price-to-filter">
+                <p class="filter-title">
+                    Ціна до:
+                </p>
+                    <input type="number" id="price-to"/>
+            </div>
+        </div>
+        <div class="products">
+
+        </div>
+        <div class="product-full">
+
+        </div>
+        <div class="make-order-popup">
+            <div class="close-popup">X</div>
+            <h4>Оформлення замовлення</h4>
+            <input type="text" placeholder="Ваше Ім'я" name="name" id="name" class="make-order-name">
+            <input type="email" placeholder="Ваш email" name="email" id="email" class="make-order-email">
+            <input type="tel" placeholder="Ваш телефон" name="phone" id="phone" class="make-order-phone">
+            <button class="accept-button">Підтвердити</button>
+        </div>
+        <script src="./markup.js"></script>
+        <script src="./products.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
